@@ -18,10 +18,10 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer providerKey="ogr" name="cuks" checked="Qt::Checked" expanded="1" id="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511" source="./cuks.shp">
+    <layer-tree-layer checked="Qt::Checked" id="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511" providerKey="ogr" source="./cuks.shp" expanded="0" name="cuks">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer providerKey="wms" name="OpenStreetMap" checked="Qt::Checked" expanded="1" id="OpenStreetMap_2217387f_f552_4dc5_81b8_f40a8be4d56a" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0">
+    <layer-tree-layer checked="Qt::Checked" id="OpenStreetMap_2217387f_f552_4dc5_81b8_f40a8be4d56a" providerKey="wms" source="crs=EPSG:3857&amp;format&amp;type=xyz&amp;url=http://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.png&amp;zmax=19&amp;zmin=0" expanded="1" name="OpenStreetMap">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -29,19 +29,19 @@
       <item>cuks_1b8d204b_0996_4966_a6d8_cb07e0057511</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings enabled="0" intersection-snapping="0" unit="1" type="1" tolerance="12" mode="2">
+  <snapping-settings mode="2" enabled="0" tolerance="12" intersection-snapping="0" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting enabled="0" type="1" tolerance="12" units="1" id="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511"/>
+      <layer-setting id="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511" units="1" enabled="0" tolerance="12" type="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
-  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
     <units>meters</units>
     <extent>
-      <xmin>12233238.15161325968801975</xmin>
-      <ymin>-347063.65008077525999397</ymin>
-      <xmax>12859208.34410853870213032</xmax>
-      <ymax>-23645.71729154651984572</ymax>
+      <xmin>11726192.85276452265679836</xmin>
+      <ymin>-1004418.4784220929723233</ymin>
+      <xmax>12977359.5868102665990591</xmax>
+      <ymax>-408672.95994760352186859</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -59,21 +59,21 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
-    <legendlayer showFeatureCount="0" name="cuks" checked="Qt::Checked" open="true" drawingOrder="-1">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511"/>
+    <legendlayer checked="Qt::Checked" open="false" drawingOrder="-1" showFeatureCount="0" name="cuks">
+      <filegroup open="false" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer showFeatureCount="0" name="OpenStreetMap" checked="Qt::Checked" open="true" drawingOrder="-1">
+    <legendlayer checked="Qt::Checked" open="true" drawingOrder="-1" showFeatureCount="0" name="OpenStreetMap">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="OpenStreetMap_2217387f_f552_4dc5_81b8_f40a8be4d56a"/>
+        <legendlayerfile isInOverview="0" layerid="OpenStreetMap_2217387f_f552_4dc5_81b8_f40a8be4d56a" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
   <projectlayers>
-    <maplayer maxScale="0" autoRefreshTime="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" type="raster" minScale="1e+8">
+    <maplayer maxScale="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" minScale="1e+8" autoRefreshTime="0" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" type="raster">
       <extent>
         <xmin>-20037508.34278924390673637</xmin>
         <ymin>-20037508.34278925508260727</ymin>
@@ -116,24 +116,24 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
         <links/>
       </resourceMetadata>
       <customproperties>
-        <property key="identify/format" value="Undefined"/>
+        <property value="Undefined" key="identify/format"/>
       </customproperties>
       <provider>wms</provider>
       <noData>
-        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList useSrcNoData="0" bandNo="1"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <pipe>
-        <rasterrenderer opacity="1" type="singlebandcolordata" band="1" alphaBand="-1">
+        <rasterrenderer band="1" alphaBand="-1" opacity="1" type="singlebandcolordata">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -144,17 +144,17 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" brightness="0"/>
-        <huesaturation grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" saturation="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128"/>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation grayscaleMode="0" colorizeGreen="128" colorizeStrength="100" colorizeOn="0" colorizeBlue="128" saturation="0" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer simplifyLocal="1" simplifyMaxScale="1" maxScale="0" autoRefreshTime="0" refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" readOnly="0" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" labelsEnabled="0" simplifyDrawingHints="1" autoRefreshEnabled="0" type="vector" geometry="Point" simplifyDrawingTol="1" minScale="1e+8">
+    <maplayer labelsEnabled="0" maxScale="0" simplifyLocal="1" refreshOnNotifyEnabled="0" simplifyMaxScale="1" refreshOnNotifyMessage="" simplifyDrawingHints="1" minScale="1e+8" simplifyDrawingTol="1" autoRefreshTime="0" geometry="Point" readOnly="0" simplifyAlgorithm="0" hasScaleBasedVisibilityFlag="0" autoRefreshEnabled="0" type="vector">
       <extent>
-        <xmin>105.50592034672915531</xmin>
-        <ymin>-8.90887953859784076</ymin>
-        <xmax>123.08718997193874145</xmax>
+        <xmin>100.29162932375305672</xmin>
+        <ymin>-10.19115266233194106</ymin>
+        <xmax>130.48464732845664571</xmax>
         <ymax>4.37280410625073035</ymax>
       </extent>
       <id>cuks_1b8d204b_0996_4966_a6d8_cb07e0057511</id>
@@ -208,33 +208,33 @@
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="singleSymbol">
+      <renderer-v2 forceraster="0" type="singleSymbol" symbollevels="0" enableorderby="0">
         <symbols>
-          <symbol clip_to_extent="1" name="0" type="marker" alpha="1">
-            <layer enabled="1" class="SimpleMarker" pass="0" locked="0">
-              <prop v="0" k="angle"/>
-              <prop v="230,227,45,255" k="color"/>
-              <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="circle" k="name"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="diameter" k="scale_method"/>
-              <prop v="2" k="size"/>
-              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-              <prop v="MM" k="size_unit"/>
-              <prop v="1" k="vertical_anchor_point"/>
+          <symbol clip_to_extent="1" alpha="1" type="marker" name="0">
+            <layer locked="0" pass="0" enabled="1" class="SimpleMarker">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="230,227,45,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option name="name" value="" type="QString"/>
+                  <Option value="" type="QString" name="name"/>
                   <Option name="properties"/>
-                  <Option name="type" value="collection" type="QString"/>
+                  <Option value="collection" type="QString" name="type"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -268,31 +268,31 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias field="id" name="" index="0"/>
-        <alias field="point" name="" index="1"/>
+        <alias index="0" field="id" name=""/>
+        <alias index="1" field="point" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default field="id" applyOnUpdate="0" expression=""/>
-        <default field="point" applyOnUpdate="0" expression=""/>
+        <default applyOnUpdate="0" field="id" expression=""/>
+        <default applyOnUpdate="0" field="point" expression=""/>
       </defaults>
       <constraints>
-        <constraint constraints="0" field="id" notnull_strength="0" unique_strength="0" exp_strength="0"/>
-        <constraint constraints="0" field="point" notnull_strength="0" unique_strength="0" exp_strength="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="id" unique_strength="0" constraints="0"/>
+        <constraint notnull_strength="0" exp_strength="0" field="point" unique_strength="0" constraints="0"/>
       </constraints>
       <constraintExpressions>
-        <constraint field="id" exp="" desc=""/>
-        <constraint field="point" exp="" desc=""/>
+        <constraint exp="" desc="" field="id"/>
+        <constraint exp="" desc="" field="point"/>
       </constraintExpressions>
       <attributeactions>
-        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
       <attributetableconfig sortExpression="" sortOrder="0" actionWidgetStyle="dropDown">
         <columns>
-          <column name="id" type="field" width="-1" hidden="0"/>
-          <column name="point" type="field" width="-1" hidden="0"/>
-          <column type="actions" width="-1" hidden="1"/>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="point"/>
+          <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -319,46 +319,46 @@
     <layer id="cuks_1b8d204b_0996_4966_a6d8_cb07e0057511"/>
   </layerorder>
   <properties>
-    <Measure>
-      <Ellipsoid type="QString">WGS84</Ellipsoid>
-    </Measure>
+    <PAL>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+    </PAL>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
     <Gui>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
     </Gui>
-    <Measurement>
-      <AreaUnits type="QString"></AreaUnits>
-      <DistanceUnits type="QString"></DistanceUnits>
-    </Measurement>
     <PositionPrecision>
       <Automatic type="bool">true</Automatic>
       <DecimalPlaces type="int">2</DecimalPlaces>
     </PositionPrecision>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <PAL>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <SearchMethod type="int">0</SearchMethod>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-    </PAL>
+    <Measurement>
+      <DistanceUnits type="QString"></DistanceUnits>
+      <AreaUnits type="QString"></AreaUnits>
+    </Measurement>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
   </properties>
   <visibility-presets/>
   <transformContext/>

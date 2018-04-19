@@ -32,7 +32,7 @@ r.symbols.append(polygon_symbolizer)
 
 s.rules.append(r)
 m.append_style('yusuf1',s)
-ds = mapnik.Shapefile(file="D:\GIS tugas\INDONESIA_PROP.shp")
+ds = mapnik.Shapefile(file="D:\cp 1 gis 200 point\INDONESIA_PROP.shp")
 layer = mapnik.Layer('peta')
 layer.datasource = ds
 layer.styles.append('yusuf1')
@@ -58,7 +58,7 @@ r.symbols.append(basinsLabels)
 
 s.rules.append(r)
 m.append_style('yusuf2',s)
-ds = mapnik.Shapefile(file="D:\GIS tugas\cuks.shp")
+ds = mapnik.Shapefile(file="D:\cp 1 gis 200 point\cuks.shp")
 layer = mapnik.Layer('peta')
 layer.datasource = ds
 layer.styles.append('yusuf2')
@@ -81,5 +81,5 @@ m.layers.append(layer)
 
 
 m.zoom_all()
-mapnik.render_to_file(m,'peta.pdf','pdf')
-print "rendered image to 'peta.pdf"
+mapnik.render_to_file(m,'peta.tiff','tiff')
+print "rendered image to 'peta.tiff"
