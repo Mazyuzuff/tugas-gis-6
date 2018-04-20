@@ -51,8 +51,8 @@ m.layers.append(layer)
 # r.symbols.append(point_sym)
 # s.rules.append(r)
 
-basinsLabels = mapnik.TextSymbolizer(mapnik.Expression('[point]'), 'DejaVu Sans Bold',3,mapnik.Color('black'))
-basinsLabels.halo_fill = mapnik.Color('blue')
+basinsLabels = mapnik.TextSymbolizer(mapnik.Expression('[point]'), 'DejaVu Sans Bold',3,mapnik.Color('red'))
+basinsLabels.halo_fill = mapnik.Color('yellow')
 basinsLabels.halo_radius = 1
 r.symbols.append(basinsLabels)
 
